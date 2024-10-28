@@ -1,0 +1,26 @@
+﻿@page
+@model CreateAuthomaSchemes.Pages.GenerateMachineModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "a";
+}
+
+<h2>Generuj Maszynę Turinga lub Automat</h2>
+
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="MachineDescription">Podaj opis maszyny:</label>
+        <textarea asp-id="MachineDescription" name="MachineDescription" class="form-control" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Generuj</button>
+
+</form>
+@if (!string.IsNullOrEmpty(Model.ApiResponse))
+{
+    <div class="mt-4">
+        <h3>Odpowiedź z API:</h3>
+        <pre>@Model.ApiResponse</pre>
+    </div>
+}

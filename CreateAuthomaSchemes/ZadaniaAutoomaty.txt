@@ -1,0 +1,4 @@
+Zadania:
+Znajdź słowo w ∈ {0, 1}∗
+spełniające warunek w ∈ L(A1), w ∈ L(A2), 4 < |w| < 8,
+w = w^R i dokonaj obliczenia obu automatów na tym słowie
