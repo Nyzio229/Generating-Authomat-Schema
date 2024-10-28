@@ -3178,11 +3178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Inne\\UMK\\inzynierka\\projekt2\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj",
+      "projectUniqueName": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj",
       "projectName": "CreateAuthomaSchemes",
-      "projectPath": "D:\\Inne\\UMK\\inzynierka\\projekt2\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj",
+      "projectPath": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj",
       "packagesPath": "C:\\Users\\norja\\.nuget\\packages\\",
-      "outputPath": "D:\\Inne\\UMK\\inzynierka\\projekt2\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\obj\\",
+      "outputPath": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\norja\\AppData\\Roaming\\NuGet\\NuGet.Config",
