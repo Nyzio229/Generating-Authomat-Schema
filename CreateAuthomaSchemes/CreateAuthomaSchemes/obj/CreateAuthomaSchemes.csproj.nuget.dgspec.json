@@ -49,6 +49,14 @@
             "Google_GenerativeAI": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "QuickGraph": {
+              "target": "Package",
+              "version": "[3.6.61119.7, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             }
           },
           "imports": [

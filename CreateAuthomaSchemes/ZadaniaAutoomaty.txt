@@ -1,4 +1,81 @@
 Zadania:
+(a)
+
 Znajdź słowo w ∈ {0, 1}∗
-spełniające warunek w ∈ L(A1), w ∈ L(A2), 4 < |w| < 8,
-w = w^R i dokonaj obliczenia obu automatów na tym słowie
+spełniające warunek w ∈ L(A1), w ∈ L(A2), 4 < |w| < 8, w = w^R 
+i dokonaj obliczenia obu automatów na tym słowie
+
+Znajdź słowo w ∈ {0, 1}∗
+spełniające warunek 
+w /∈ L(A1), w ∈ L(A2), |w| > 4,|w|0 = |w|1 
+i dokonaj obliczenia obu automatow na tym słowie.
+
+(c)
+
+ Jakie języki akceptują automaty? Opisz je słownie lub za pomocą wyrażeń regularnych.
+
+(d)
+
+ Podaj automaty (mog¡ by¢ z λ-przej±ciami) akceptuj¡ce j¦zyki L(A1)∪L(A2), L(A1)·L(A2), L(A1)∗, L(A1)∗L(A2). Skorzystaj z pomysªu z tw. Kleeny'ego.
+
+(e) 
+
+Dokonaj wybranej determinizacji automatów z poprzedniego punktu.
+
+(f) 
+Podaj automaty akceptujące języki 
+{0, 1}∗ \ L(A1), L(A1) ∩ L(A2), L(A1) \ L(A2),
+
+
+
+
+
+**Słowo:** 01010
+
+**Automat A1:**
+
+* **Stan początkowy:** q0
+* **Stany końcowe:** {q1, q3}
+* **Funkcja przejść:**
+    * δ(q0, 0) = q0
+    * δ(q0, 1) = q1
+    * δ(q1, 0) = q2
+    * δ(q1, 1) = q3
+    * δ(q2, 0) = q2
+    * δ(q2, 1) = q3
+    * δ(q3, 0) = q3
+    * δ(q3, 1) = q3
+
+**Obliczenie:**
+
+* δ(q0, 0) = q0
+* δ(q0, 1) = q1
+* δ(q1, 0) = q2
+* δ(q1, 1) = q3
+* δ(q3, 0) = q3
+* δ(q3, 1) = q3
+
+**Słowo jest akceptowane przez A1, ponieważ kończy się w stanie końcowym q3.**
+
+**Automat A2:**
+
+* **Stan początkowy:** p0
+* **Stany końcowe:** {p2}
+* **Funkcja przejść:**
+    * δ(p0, 0) = p0
+    * δ(p0, 1) = p1
+    * δ(p1, 0) = p2
+    * δ(p1, 1) = p2
+    * δ(p2, 0) = p2
+    * δ(p2, 1) = p2
+
+**Obliczenie:**
+
+* δ(p0, 0) = p0
+* δ(p0, 1) = p1
+* δ(p1, 0) = p2
+* δ(p1, 1) = p2
+* δ(p2, 0) = p2
+* δ(p2, 1) = p2
+
+**Słowo jest akceptowane przez A2, ponieważ kończy się w stanie końcowym p2.**

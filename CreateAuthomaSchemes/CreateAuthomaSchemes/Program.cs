@@ -1,6 +1,7 @@
 using CreateAuthomaSchemes;
 using GenerativeAI.Models;
-
+using CreateAuthomaSchemes.Pages;
+using QuickGraph.Algorithms.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,8 +11,9 @@ builder.Services.AddHttpClient("GoogleGeminiAI", client =>
 {
     client.BaseAddress = new Uri(builder.Configuration["GoogleGeminiAI:Endpoint"]);
     client.DefaultRequestHeaders.Add("Content-Type", "application/json");
-    client.DefaultRequestHeaders.Add("Authorization", $"Bearer {builder.Configuration["GoogleGeminiAI:ApiKey"]}");
+    client.DefaultRequestHeaders.Add("Authorization", $"Bearer {builder.Configuration["GoogleGeminiAI:AIzaSyD9Yyv6lN8lzTJAecUZ6yBt4-_cxsB0IJo"]}");
 });
+builder.Services.AddSingleton<GenerateMachineModel>();
 
 builder.Services.Configure<GoogleAiOptions>(
     builder.Configuration.GetSection("GoogleAI"));
