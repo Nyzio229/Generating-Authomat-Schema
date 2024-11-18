@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xFC1TGcn5xw=",
+  "dgSpecHash": "DpAucF4Z0z4=",
   "success": true,
   "projectFilePath": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\norja\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\norja\\.nuget\\packages\\google_generativeai\\1.0.2\\google_generativeai.1.0.2.nupkg.sha512",
     "C:\\Users\\norja\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\norja\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

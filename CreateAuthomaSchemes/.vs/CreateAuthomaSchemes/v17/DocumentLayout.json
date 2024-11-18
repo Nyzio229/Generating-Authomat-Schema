@@ -11,8 +11,19 @@
       "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\generatemachine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\googleaioptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\googleaioptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\wwwroot\\css\\mycsstheme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\wwwroot\\css\\mycsstheme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|c:\\users\\norja\\.nuget\\packages\\bootstrap\\5.3.3\\contentfiles\\any\\any\\wwwroot\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +32,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,68 +41,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GoogleAiOptions.cs",
-              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\GoogleAiOptions.cs",
-              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\GoogleAiOptions.cs",
-              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\GoogleAiOptions.cs",
-              "RelativeToolTip": "CreateAuthomaSchemes\\GoogleAiOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T18:52:47.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\appsettings.json",
-              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\appsettings.json",
-              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\appsettings.json",
-              "RelativeToolTip": "CreateAuthomaSchemes\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-28T18:45:56.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Program.cs",
-              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Program.cs",
-              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Program.cs",
-              "RelativeToolTip": "CreateAuthomaSchemes\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T18:07:20.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAASAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Index.cshtml",
+              "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T18:03:23.19Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GenerateMachine.cshtml.cs",
-              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
-              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
-              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
-              "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAUwEYAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T18:02:11.368Z",
+              "WhenOpened": "2024-11-18T18:35:35.15Z",
               "EditorCaption": ""
             },
             {
@@ -106,9 +64,85 @@
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
               "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
               "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-28T18:01:55.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenerateMachine.cshtml.cs",
+              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
+              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
+              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
+              "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAwI4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T18:02:11.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mycsstheme.css",
+              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\wwwroot\\css\\mycsstheme.css",
+              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\wwwroot\\css\\mycsstheme.css",
+              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\wwwroot\\css\\mycsstheme.css",
+              "RelativeToolTip": "CreateAuthomaSchemes\\wwwroot\\css\\mycsstheme.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAXAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-18T19:28:36.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "C:\\Users\\norja\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+              "ToolTip": "C:\\Users\\norja\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css[Tylko do odczytu]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-18T19:27:19.705Z",
+              "EditorCaption": "[Tylko do odczytu]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\appsettings.json",
+              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\appsettings.json",
+              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\appsettings.json",
+              "RelativeToolTip": "CreateAuthomaSchemes\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-28T18:45:56.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Program.cs",
+              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Program.cs",
+              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Program.cs",
+              "RelativeToolTip": "CreateAuthomaSchemes\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T18:07:20.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T18:03:23.19Z",
               "EditorCaption": ""
             }
           ]

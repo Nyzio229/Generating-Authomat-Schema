@@ -66,9 +66,12 @@ namespace CreateAuthomaSchemes.Pages
 
         
             Console.Write(ApiResponse);
-            string sample_api_response = "Stanów: {q0, q1, q2} \nStan początkowy: {q0}\nStany akceptujące: {q0, q1}\nFunkcje przejścia:\nδ(q0, a) = q1\nδ(q0, b) = q0\nδ(q1, a) = q1\nδ(q1, b) = q2\nδ(q2, a) = q2\nδ(q2, b) = q2";
-
-            GraphImage = await GenerateGraphImageAsync(sample_api_response);
+            //string sample_api_response = "Stanów: {q0, q1, q2} \nStan początkowy: {q0}\nStany akceptujące: {q0, q1}\nFunkcje przejścia:\nδ(q0, a) = q1\nδ(q0, b) = q0\nδ(q1, a) = q1\nδ(q1, b) = q2\nδ(q2, a) = q2\nδ(q2, b) = q2";
+            
+            //Generowanie grafu przez serwer
+            GraphImage = await GenerateGraphImageAsync(ApiResponse);
+            
+            //Generowanie grafu przez skrypt
             //GenerateGraph();
             return Page();
         }
@@ -136,7 +139,8 @@ namespace CreateAuthomaSchemes.Pages
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://localhost:5001"); // URL serwera Flask
+                //client.BaseAddress = new Uri("http://localhost:5001"); // URL serwera Flask
+                client.BaseAddress = new Uri("https://nyzio.pythonanywhere.com/"); // URL serwera Flask
                 var content = new MultipartFormDataContent();
                 content.Add(new StringContent(apiResponse), "ApiResponse");
 

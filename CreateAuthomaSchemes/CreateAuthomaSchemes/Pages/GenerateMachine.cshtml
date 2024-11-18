@@ -5,30 +5,31 @@
 @{
     ViewData["Title"] = "a";
 }
+<div class="text-center">
+    <br />
+    <h1 class="display-3">Generowanie Automatu</h1>
 
-<h2>Generuj Maszynę Turinga lub Automat</h2>
+    <form method="post">
+        <div class="form-group">
+            <label class="align-content-center card text-opacity-100" asp-for="MachineDescription">Podaj opis automatu:</label>
+            <textarea class="form-control" id="floatingTextarea" asp-id="MachineDescription" name="MachineDescription" rows="5" placeholder="Podaj opis" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Generuj</button>
 
-
-<form method="post">
-    <div class="form-group">
-        <label asp-for="MachineDescription">Podaj opis maszyny:</label>
-        <textarea asp-id="MachineDescription" name="MachineDescription" class="form-control" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Generuj</button>
-
-</form>
-@if (!string.IsNullOrEmpty(Model.ApiResponse))
-{
-    <div class="mt-4">
-        <h3>Odpowiedź z API:</h3>
-        <pre>@Model.ApiResponse</pre>
-    </div>
-}
-@if (Model.GraphImage != null)
-{
-    <img src="data:image/png;base64,@Convert.ToBase64String(Model.GraphImage)" alt="Graph Image" />
-}
-else
-{
-    <p>Brak grafu do wyświetlenia.</p>
-}
+    </form>
+    @if (!string.IsNullOrEmpty(Model.ApiResponse))
+    {
+        <div class="text-start mt-4">
+            <h3>Odpowiedź z API:</h3>
+            <pre>@Model.ApiResponse</pre>
+        </div>
+    }
+    @if (Model.GraphImage != null)
+    {
+        <img src="data:image/png;base64,@Convert.ToBase64String(Model.GraphImage)" alt="Graph Image" />
+    }
+    else
+    {
+        <p>Brak grafu do wyświetlenia.</p>
+    }
+</div>

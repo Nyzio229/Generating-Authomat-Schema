@@ -57,6 +57,10 @@
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.3, )"
             }
           },
           "imports": [
