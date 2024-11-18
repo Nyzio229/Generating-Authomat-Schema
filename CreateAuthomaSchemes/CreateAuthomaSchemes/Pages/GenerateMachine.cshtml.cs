@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
 using System.Text.Json;
 using System.Text;
 using GenerativeAI;
@@ -63,26 +64,12 @@ namespace CreateAuthomaSchemes.Pages
             var model = new GenerativeModel(apiKey);
             await GenerateContent(MachineDescription,apiKey);
 
-            //try
-            //{
-            //    var result = await model.GenerateContentAsync(MachineDescription);
-            //    // Wysyłamy żądanie POST do API
-            //    //var response = await geminiAi.Client.PostAsync("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyD9Yyv6lN8lzTJAecUZ6yBt4-_cxsB0IJo", content);
-            //    //response.EnsureSuccessStatusCode();
-
-            //    //// Odbieramy odpowiedź i przetwarzamy ją
-            //    //ApiResponse = await response.Content.ReadAsStringAsync();
-            //    //Console.WriteLine("Odpowiedź z API Gemini: " + ApiResponse);
-            //    ApiResponse = result;
-            //}
-            //catch (HttpRequestException e)
-            //{
-            //    Console.WriteLine("Błąd podczas komunikacji z Gemini AI API: " + e.Message);
-            //    ApiResponse = "Wystąpił błąd podczas komunikacji z API.";
-            //}
+        
             Console.Write(ApiResponse);
-            ParseApiResponse(ApiResponse);
+            string sample_api_response = "Stanów: {q0, q1, q2} \nStan początkowy: {q0}\nStany akceptujące: {q0, q1}\nFunkcje przejścia:\nδ(q0, a) = q1\nδ(q0, b) = q0\nδ(q1, a) = q1\nδ(q1, b) = q2\nδ(q2, a) = q2\nδ(q2, b) = q2";
 
+            GraphImage = await GenerateGraphImageAsync(sample_api_response);
+            //GenerateGraph();
             return Page();
         }
         public async Task ListAvailableModels()
@@ -145,116 +132,67 @@ namespace CreateAuthomaSchemes.Pages
             }
         }
 
-        private void GenerateGraph(List<string> states, string initialState, List<string> acceptingStates, List<(string Source, string Symbol, string Target)> transitions)
+        public async Task<byte[]> GenerateGraphImageAsync(string apiResponse)
         {
-            var graph = new AdjacencyGraph<string, TaggedEdge<string, string>>();
-
-            // Dodaj wierzchołki
-            foreach (var state in states)
+            using (var client = new HttpClient())
             {
-                graph.AddVertex(state);
+                client.BaseAddress = new Uri("http://localhost:5001"); // URL serwera Flask
+                var content = new MultipartFormDataContent();
+                content.Add(new StringContent(apiResponse), "ApiResponse");
+
+                var response = await client.PostAsync("/generate-graph", content);
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadAsByteArrayAsync(); // Odbieranie grafu jako obraz PNG
+                }
+                else
+                {
+                    throw new Exception("Error generating graph: " + response.ReasonPhrase);
+                }
             }
-
-            // Dodaj krawędzie
-            foreach (var transition in transitions)
-            {
-                // Tworzymy krawędź z etykietą (symbol)
-                var edge = new TaggedEdge<string, string>(transition.Source, transition.Target, transition.Symbol);
-                graph.AddEdge(edge);
-
-                // Logowanie dla testowania
-                Console.WriteLine($"Krawędź dodana do grafu: {transition.Source} --{transition.Symbol}--> {transition.Target}");
-            }
-
-            // Przekazanie grafu do metody renderującej
-            GraphImage = RenderGraph(graph, initialState, acceptingStates);
         }
-
-
-        private byte[] RenderGraph(AdjacencyGraph<string, TaggedEdge<string, string>> graph, string initialState, List<string> acceptingStates)
+        public void GenerateGraph()
         {
-            int width = 600, height = 400;
-            using var bitmap = new Bitmap(width, height);
-            using var g = Graphics.FromImage(bitmap);
-            g.Clear(Color.White);
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            var vertexPositions = new Dictionary<string, PointF>();
-            var random = new Random();
-
-            // Pozycjonowanie wierzchołków
-            foreach (var vertex in graph.Vertices)
+            try
             {
-                vertexPositions[vertex] = new PointF(random.Next(50, width - 50), random.Next(50, height - 50));
-            }
+                // Ścieżki do Pythona i skryptu Pythona
+                string pythonPath = @"C:\Users\norja\AppData\Local\Microsoft\WindowsApps\python.exe";
+                string scriptPath = Path.Combine(Directory.GetCurrentDirectory(), "\\graph_draw\\graph_draw_script.py");
+                string script = @"D:\Inne\UMK\inzynierka\projekt\Generating-Authomat-Schema\CreateAuthomaSchemes\graph_draw\graph_draw_script.py";
 
-            // Rysowanie wierzchołków
-            foreach (var vertex in graph.Vertices)
+                string args = $"{scriptPath} {ApiResponse}";
+
+                // Ustawienia procesu do uruchomienia skryptu Pythona
+                var processStartInfo = new ProcessStartInfo
+                {
+                    FileName = "python",
+                    Arguments = $"\"{script}\" \"{ApiResponse}\"",
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+
+                using var process = new Process { StartInfo = processStartInfo };
+                process.Start();
+
+                // Odczyt wyniku ze StandardOutput
+                string result = process.StandardOutput.ReadToEnd();
+                string errors = process.StandardError.ReadToEnd();
+                process.WaitForExit();
+
+                if (!string.IsNullOrEmpty(errors))
+                {
+                    throw new Exception($"Error generating graph: {errors}");
+                }
+
+                byte[] img = Encoding.ASCII.GetBytes(result.Trim()); // Zakodowany ciąg Base64
+                GraphImage = img;
+            }
+            catch (Exception ex)
             {
-                var position = vertexPositions[vertex];
-                var isInitial = vertex == initialState;
-                var isAccepting = acceptingStates.Contains(vertex);
-
-                var brush = isInitial ? Brushes.Yellow : (isAccepting ? Brushes.LightGreen : Brushes.LightBlue);
-
-                g.FillEllipse(brush, position.X - 20, position.Y - 20, 40, 40);
-                g.DrawString(vertex, new Font("Arial", 10), Brushes.Black, position);
+                 Console.WriteLine(Content("Błąd: " + ex.Message));
             }
-
-            // Rysowanie krawędzi
-            foreach (var edge in graph.Edges)
-            {
-                var start = vertexPositions[edge.Source];
-                var end = vertexPositions[edge.Target];
-
-                // Logowanie krawędzi do testowania
-                Console.WriteLine($"Rysowanie krawędzi: {edge.Source} --{edge.Tag}--> {edge.Target}");
-
-                // Rysuj strzałki reprezentujące przejścia
-                g.DrawLine(Pens.Black, start, end);
-
-                // Wyświetlanie etykiety symbolu przejścia
-                var midpoint = new PointF((start.X + end.X) / 2, (start.Y + end.Y) / 2);
-                g.DrawString(edge.Tag, new Font("Arial", 8), Brushes.Red, midpoint);
-            }
-
-            using var memoryStream = new MemoryStream();
-            bitmap.Save(memoryStream, ImageFormat.Png);
-            return memoryStream.ToArray();
-        }
-
-
-
-        private void ParseApiResponse(string apiResponse)
-        {
-            // Parsing stanów
-            var statesMatch = Regex.Match(apiResponse, @"Stanów:\s*\{([^}]*)\}");
-            var states = statesMatch.Groups[1].Value.Split(',').Select(s => s.Trim()).ToList();
-
-            // Parsing stanu początkowego
-            var initialStateMatch = Regex.Match(apiResponse, @"Stan początkowy:\s*\{([^}]*)\}");
-            var initialState = initialStateMatch.Groups[1].Value.Trim();
-
-            // Parsing stanów akceptujących
-            var acceptingStatesMatch = Regex.Match(apiResponse, @"Stany akceptujące:\s*\{([^}]*)\}");
-            var acceptingStates = acceptingStatesMatch.Groups[1].Value.Split(',').Select(s => s.Trim()).ToList();
-
-            // Parsing funkcji przejścia
-            var transitions = new List<(string Source, string Symbol, string Target)>();
-            var transitionMatches = Regex.Matches(apiResponse, @"δ\((q\d+),\s*([a-z])\)\s*=\s*(q\d+)");
-            foreach (Match match in transitionMatches)
-            {
-                var source = match.Groups[1].Value;
-                var symbol = match.Groups[2].Value;
-                var target = match.Groups[3].Value;
-                transitions.Add((source, symbol, target));
-
-                // Dodaj logowanie do sprawdzenia
-                Console.WriteLine($"Dodano przejście: {source} --{symbol}--> {target}");
-            }
-
-            // Przekazanie wyników do metody rysującej graf
-            GenerateGraph(states, initialState, acceptingStates, transitions);
         }
 
     }

@@ -46,7 +46,8 @@
               "RelativeToolTip": "CreateAuthomaSchemes\\GoogleAiOptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T18:52:47.591Z"
+              "WhenOpened": "2024-10-28T18:52:47.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -92,7 +93,7 @@
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
               "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
               "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAgwOAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwEYAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T18:02:11.368Z",
               "EditorCaption": ""
@@ -105,9 +106,10 @@
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
               "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
               "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T18:01:55.842Z"
+              "WhenOpened": "2024-10-28T18:01:55.842Z",
+              "EditorCaption": ""
             }
           ]
         }

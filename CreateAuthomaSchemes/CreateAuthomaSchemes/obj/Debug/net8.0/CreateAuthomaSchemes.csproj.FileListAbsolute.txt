@@ -72,4 +72,3 @@ D:\Inne\UMK\inzynierka\projekt\Generating-Authomat-Schema\CreateAuthomaSchemes\C
 D:\Inne\UMK\inzynierka\projekt\Generating-Authomat-Schema\CreateAuthomaSchemes\CreateAuthomaSchemes\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Inne\UMK\inzynierka\projekt\Generating-Authomat-Schema\CreateAuthomaSchemes\CreateAuthomaSchemes\bin\Debug\net8.0\System.Drawing.Common.dll
 D:\Inne\UMK\inzynierka\projekt\Generating-Authomat-Schema\CreateAuthomaSchemes\CreateAuthomaSchemes\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\Inne\UMK\inzynierka\projekt\Generating-Authomat-Schema\CreateAuthomaSchemes\CreateAuthomaSchemes\bin\Debug\net8.0\client_secret_384629776595-35c4u3saunhput709i0aabtcn6d8vuag.apps.googleusercontent.com.json

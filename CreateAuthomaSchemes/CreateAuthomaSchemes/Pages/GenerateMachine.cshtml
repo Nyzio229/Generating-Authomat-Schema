@@ -24,10 +24,9 @@
         <pre>@Model.ApiResponse</pre>
     </div>
 }
-@if (Model.GraphImage != null && Model.GraphImage.Length > 0)
+@if (Model.GraphImage != null)
 {
-    <h3>Wygenerowany Automat:</h3>
-    <img src="data:image/png;base64,@Convert.ToBase64String(Model.GraphImage)" alt="Automat" />
+    <img src="data:image/png;base64,@Convert.ToBase64String(Model.GraphImage)" alt="Graph Image" />
 }
 else
 {
