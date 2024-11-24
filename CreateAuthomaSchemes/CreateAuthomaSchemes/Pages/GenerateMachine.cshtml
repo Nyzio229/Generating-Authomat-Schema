@@ -5,6 +5,10 @@
 @{
     ViewData["Title"] = "a";
 }
+<head>
+    <script src="~/js/site.js"></script>
+</head>
+
 <div class="text-center">
     <br />
     <h1 class="display-3">Generowanie Automatu</h1>
@@ -15,8 +19,8 @@
             <textarea class="form-control" id="floatingTextarea" asp-id="MachineDescription" name="MachineDescription" rows="5" placeholder="Podaj opis" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Generuj</button>
-
     </form>
+
     @if (!string.IsNullOrEmpty(Model.ApiResponse))
     {
         <div class="text-start mt-4">
@@ -24,12 +28,46 @@
             <pre>@Model.ApiResponse</pre>
         </div>
     }
+
     @if (Model.GraphImage != null)
     {
-        <img src="data:image/png;base64,@Convert.ToBase64String(Model.GraphImage)" alt="Graph Image" />
+        <!-- Miniatura obrazka z modalem -->
+        <img src="data:image/png;base64,@Convert.ToBase64String(Model.GraphImage)"
+             alt="Graph Image"
+             class="img-thumbnail"
+             style="cursor: pointer;"
+             data-bs-toggle="modal"
+             data-bs-target="#imageModal" />
     }
     else
     {
         <p>Brak grafu do wyświetlenia.</p>
     }
+
+
+    @if (Model.GraphImage != null)
+    {
+        <!-- Modal Bootstrap -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Podgląd Grafu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <!-- Obraz w modalu -->
+                        <img id="modalImage"
+                             src="data:image/png;base64,@Convert.ToBase64String(Model.GraphImage)"
+                             alt="Graph Image"
+                             class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </div>

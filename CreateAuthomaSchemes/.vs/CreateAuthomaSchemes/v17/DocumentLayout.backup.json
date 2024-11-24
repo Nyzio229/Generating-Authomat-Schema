@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\generatemachine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\wwwroot\\css\\mycsstheme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -26,12 +26,16 @@
       "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|c:\\users\\norja\\.nuget\\packages\\bootstrap\\5.3.3\\contentfiles\\any\\any\\wwwroot\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|d:\\inne\\umk\\inzynierka\\projekt\\generating-authomat-schema\\createauthomaschemes\\createauthomaschemes\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF185ACB-307A-4207-8D46-9778A0F2494C}|CreateAuthomaSchemes\\CreateAuthomaSchemes.csproj|solutionrelative:createauthomaschemes\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,11 +45,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "CreateAuthomaSchemes\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "CreateAuthomaSchemes\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-23T11:48:01.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\Index.cshtml",
@@ -53,8 +69,7 @@
               "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-18T18:35:35.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T18:35:35.15Z"
             },
             {
               "$type": "Document",
@@ -64,7 +79,7 @@
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
               "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
               "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAADMAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-28T18:01:55.842Z",
               "EditorCaption": ""
@@ -77,7 +92,7 @@
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
               "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
               "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\GenerateMachine.cshtml.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAmwGEAAAB9AAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAwJIAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T18:02:11.368Z",
               "EditorCaption": ""
@@ -92,8 +107,7 @@
               "RelativeToolTip": "CreateAuthomaSchemes\\wwwroot\\css\\mycsstheme.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAXAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-18T19:28:36.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T19:28:36.327Z"
             },
             {
               "$type": "Document",
@@ -108,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\appsettings.json",
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\appsettings.json",
@@ -116,12 +130,11 @@
               "RelativeToolTip": "CreateAuthomaSchemes\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-28T18:45:56.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T18:45:56.002Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Program.cs",
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Program.cs",
@@ -129,21 +142,19 @@
               "RelativeToolTip": "CreateAuthomaSchemes\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T18:07:20.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T18:07:20.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Inne\\UMK\\inzynierka\\projekt\\Generating-Authomat-Schema\\CreateAuthomaSchemes\\CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CreateAuthomaSchemes\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T18:03:23.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T18:03:23.19Z"
             }
           ]
         }

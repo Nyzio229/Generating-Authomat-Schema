@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CreateAuthomaSchemes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf868653891f57ef0d823f29095741e4314bfb85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+824e742a70ed0eb8204b1bdfe2f255beb3caf7e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CreateAuthomaSchemes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CreateAuthomaSchemes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

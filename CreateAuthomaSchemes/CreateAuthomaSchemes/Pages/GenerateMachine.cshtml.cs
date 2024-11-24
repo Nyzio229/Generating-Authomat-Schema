@@ -66,10 +66,10 @@ namespace CreateAuthomaSchemes.Pages
 
         
             Console.Write(ApiResponse);
-            //string sample_api_response = "Stanów: {q0, q1, q2} \nStan początkowy: {q0}\nStany akceptujące: {q0, q1}\nFunkcje przejścia:\nδ(q0, a) = q1\nδ(q0, b) = q0\nδ(q1, a) = q1\nδ(q1, b) = q2\nδ(q2, a) = q2\nδ(q2, b) = q2";
+            string sample_api_response = "Stanów: {q0, q1, q2} \nStan początkowy: {q0}\nStany akceptujące: {q0, q1}\nFunkcje przejścia:\nδ(q0, a) = q1\nδ(q0, b) = q0\nδ(q1, a) = q1\nδ(q1, b) = q2\nδ(q2, a) = q2\nδ(q2, b) = q2";
             
             //Generowanie grafu przez serwer
-            GraphImage = await GenerateGraphImageAsync(ApiResponse);
+            GraphImage = await GenerateGraphImageAsync(sample_api_response);
             
             //Generowanie grafu przez skrypt
             //GenerateGraph();

@@ -37,6 +37,7 @@ def parse_and_draw_graph(api_response):
         # Zapis grafu do bufora pamięci
         img_buf = io.BytesIO()
         plt.savefig(img_buf, format='png')
+        plt.savefig("graph.png")
         img_buf.seek(0)
         plt.close('all')  # Zwolnienie zasobów Matplotlib
         return img_buf
