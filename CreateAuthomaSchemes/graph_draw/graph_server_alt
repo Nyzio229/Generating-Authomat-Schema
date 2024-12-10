@@ -1,0 +1,69 @@
+from flask import Flask, request, send_file
+import matplotlib.pyplot as plt
+import networkx as nx
+import io
+
+app = Flask(__name__)
+
+@app.route('/generate-graph', methods=['POST'])
+def generate_graph():
+    api_response = request.form['ApiResponse']
+    dfa_data = parse_dfa_response(api_response)
+    graph = create_dfa_graph(dfa_data)
+    img_bytes = graph_to_bytes(graph)
+    return send_file(io.BytesIO(img_bytes), mimetype='image/png')
+
+
+def parse_dfa_response(response):
+    dfa_data = {'states': set(), 'transitions': {}, 'initial_state': None, 'accepting_states': set()}
+    lines = response.split('\n')
+    for line in lines:
+        line = line.strip()
+        if line.startswith("Stanów:"):
+            states = line.split(':')[1].strip().strip('{}').split(', ')
+            dfa_data['states'].update(states)
+        elif line.startswith("Stan początkowy:"):
+            initial_state = line.split(':')[1].strip().strip('{}')
+            dfa_data['initial_state'] = initial_state
+        elif line.startswith("Stany akceptujące:"):
+            accepting_states = line.split(':')[1].strip().strip('{}').split(', ')
+            dfa_data['accepting_states'].update(accepting_states)
+        elif line.startswith('δ('):
+            parts = line.split(' = ')
+            result_state = parts[1].strip()
+            trans_parts = parts[0][2:-1].split(', ')
+            state, symbol = trans_parts[0], trans_parts[1]
+            if state not in dfa_data['transitions']:
+                dfa_data['transitions'][state] = {}
+            dfa_data['transitions'][state][symbol] = result_state
+    return dfa_data
+
+
+def create_dfa_graph(dfa_data):
+    G = nx.DiGraph()
+    for state in dfa_data['states']:
+        G.add_node(state)
+    for state, transitions in dfa_data['transitions'].items():
+        for symbol, result_state in transitions.items():
+            G.add_edge(state, result_state, label=symbol)
+    
+    pos = nx.spring_layout(G)
+    plt.figure()
+    nx.draw(G, pos, with_labels=True, node_size=2000, node_color='lightblue', font_size=12, font_weight='bold')
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=nx.get_edge_attributes(G, 'label'))
+    
+    nx.draw_networkx_nodes(G, pos, nodelist=[dfa_data['initial_state']], node_color='green', node_size=3000)
+    nx.draw_networkx_nodes(G, pos, nodelist=list(dfa_data['accepting_states']), node_color='red', node_size=3000)
+    
+    return plt
+
+
+def graph_to_bytes(graph):
+    img_buffer = io.BytesIO()
+    graph.savefig(img_buffer, format='png')
+    img_buffer.seek(0)
+    return img_buffer.getvalue()
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

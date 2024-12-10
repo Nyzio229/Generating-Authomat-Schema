@@ -28,6 +28,8 @@ namespace CreateAuthomaSchemes.Pages
         public string ApiResponse { get; set; } = string.Empty;
 
         public byte[] GraphImage { get; private set; }
+        public string JFlapData{ get; private set; }
+        public IActionResult JFlapResult{ get; set; }
 
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly GoogleAiOptions _options;
@@ -62,14 +64,15 @@ namespace CreateAuthomaSchemes.Pages
             //}
             var apiKey = _options.ApiKey;
             var model = new GenerativeModel(apiKey);
-            await GenerateContent(MachineDescription,apiKey);
-
+            //await GenerateContent(MachineDescription,apiKey);
+            ApiResponse = "Witaj to test";
         
             Console.Write(ApiResponse);
             string sample_api_response = "Stanów: {q0, q1, q2} \nStan początkowy: {q0}\nStany akceptujące: {q0, q1}\nFunkcje przejścia:\nδ(q0, a) = q1\nδ(q0, b) = q0\nδ(q1, a) = q1\nδ(q1, b) = q2\nδ(q2, a) = q2\nδ(q2, b) = q2";
             
             //Generowanie grafu przez serwer
             GraphImage = await GenerateGraphImageAsync(sample_api_response);
+            //JFlapResult =  await OnGetDownloadJflap(sample_api_response);
             
             //Generowanie grafu przez skrypt
             //GenerateGraph();
@@ -155,49 +158,49 @@ namespace CreateAuthomaSchemes.Pages
                 }
             }
         }
-        public void GenerateGraph()
+
+        public async Task<IActionResult> OnGetDownloadJflap(string apiResponse)
         {
-            try
+            string sample_api_response = "Stanów: {q0, q1, q2} \nStan początkowy: {q0}\nStany akceptujące: {q0, q1}\nFunkcje przejścia:\nδ(q0, a) = q1\nδ(q0, b) = q0\nδ(q1, a) = q1\nδ(q1, b) = q2\nδ(q2, a) = q2\nδ(q2, b) = q2";
+
+            if (string.IsNullOrEmpty(apiResponse))
             {
-                // Ścieżki do Pythona i skryptu Pythona
-                string pythonPath = @"C:\Users\norja\AppData\Local\Microsoft\WindowsApps\python.exe";
-                string scriptPath = Path.Combine(Directory.GetCurrentDirectory(), "\\graph_draw\\graph_draw_script.py");
-                string script = @"D:\Inne\UMK\inzynierka\projekt\Generating-Authomat-Schema\CreateAuthomaSchemes\graph_draw\graph_draw_script.py";
-
-                string args = $"{scriptPath} {ApiResponse}";
-
-                // Ustawienia procesu do uruchomienia skryptu Pythona
-                var processStartInfo = new ProcessStartInfo
-                {
-                    FileName = "python",
-                    Arguments = $"\"{script}\" \"{ApiResponse}\"",
-                    RedirectStandardOutput = true,
-                    RedirectStandardError = true,
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                };
-
-                using var process = new Process { StartInfo = processStartInfo };
-                process.Start();
-
-                // Odczyt wyniku ze StandardOutput
-                string result = process.StandardOutput.ReadToEnd();
-                string errors = process.StandardError.ReadToEnd();
-                process.WaitForExit();
-
-                if (!string.IsNullOrEmpty(errors))
-                {
-                    throw new Exception($"Error generating graph: {errors}");
-                }
-
-                byte[] img = Encoding.ASCII.GetBytes(result.Trim()); // Zakodowany ciąg Base64
-                GraphImage = img;
+                return BadRequest("ApiResponse cannot be null or empty.");
             }
-            catch (Exception ex)
-            {
-                 Console.WriteLine(Content("Błąd: " + ex.Message));
-            }
+            var jflapData = await GenerateJflapFileAsync(sample_api_response);
+            return File(Encoding.UTF8.GetBytes(jflapData), "application/xml", "automat.jff");
         }
 
+        public async Task<string> GenerateJflapFileAsync(string apiResponse)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://nyzio.pythonanywhere.com/");
+                var content = new MultipartFormDataContent();
+                content.Add(new StringContent(apiResponse), "ApiResponse");
+
+                var response = await client.PostAsync("/generate-jflap", content);
+                if (response.IsSuccessStatusCode)
+                {
+                    // Pobierz odpowiedź jako JSON
+                    var jsonResponse = await response.Content.ReadAsStringAsync();
+
+                    // Deserializuj JSON i wyodrębnij wartość "jflap"
+                    var responseObject = JsonSerializer.Deserialize<Dictionary<string, string>>(jsonResponse);
+                    if (responseObject != null && responseObject.ContainsKey("jflap"))
+                    {
+                        return responseObject["jflap"]; // Zwróć czysty XML
+                    }
+                    else
+                    {
+                        throw new Exception("Invalid response format: 'jflap' key not found.");
+                    }
+                }
+                else
+                {
+                    throw new Exception("Error generating JFLAP file: " + response.ReasonPhrase);
+                }
+            }
+        }
     }
 }
